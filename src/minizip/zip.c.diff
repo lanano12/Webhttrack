@@ -1,0 +1,30 @@
+--- zip.c.orig	2024-01-27 14:07:18.636193212 +0100
++++ zip.c	2024-01-27 14:09:59.736631926 +0100
+@@ -1412,7 +1412,7 @@
+     else
+ #endif
+     {
+-      zi->ci.stream.next_in = (Bytef*)(uintptr_t)buf;
++      zi->ci.stream.next_in = buf;
+       zi->ci.stream.avail_in = len;
+ 
+       while ((err==ZIP_OK) && (zi->ci.stream.avail_in>0))
+@@ -1830,6 +1830,18 @@
+   return err;
+ }
+ 
++extern int ZEXPORT zipFlush (zipFile file)
++{
++    zip64_internal* zi;
++
++    if (file == NULL)
++        return ZIP_PARAMERROR;
++
++    zi = (zip64_internal*)file;
++
++    return ZFLUSH64(zi->z_filefunc,zi->filestream);
++}
++
+ extern int ZEXPORT zipClose(zipFile file, const char* global_comment) {
+     zip64_internal* zi;
+     int err = 0;
