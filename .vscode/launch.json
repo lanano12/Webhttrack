@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run HTTrack (F5)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/httrack.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build httrack",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "C:\\msys64\\mingw64\\bin;${env:PATH}"
+        }
+      ],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "Run HTTrack with args",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/httrack.exe",
+      "args": ["--help"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build httrack",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "C:\\msys64\\mingw64\\bin;${env:PATH}"
+        }
+      ],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

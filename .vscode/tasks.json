@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build httrack",
+      "type": "shell",
+      "command": "C:\\msys64\\usr\\bin\\bash",
+      "args": [
+        "-lc",
+        "export MSYSTEM=MINGW64 && . /etc/profile 2>/dev/null; cd ${workspaceFolder} && ./configure --prefix=/usr/local --with-zlib=/mingw64 --disable-shared 2>/dev/null; make -j8"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
