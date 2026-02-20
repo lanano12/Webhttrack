@@ -4,7 +4,7 @@
  * UI is the existing browser-based GUI; a Tauri version could reuse the same backend (htsserver) later.
  */
 
-const { app, BrowserWindow, BrowserView, shell, ipcMain } = require('electron');
+const { app, BrowserWindow, BrowserView, shell, ipcMain, dialog } = require('electron');
 const path = require('path');
 const { spawn } = require('child_process');
 const http = require('http');
@@ -172,6 +172,26 @@ function createWindow(port) {
           mainWindow.webContents.send('browser-load-status', 'failed', err.message || String(err));
         }
       });
+    }
+  });
+  ipcMain.handle('browser-capture-screenshot', async () => {
+    if (!browserView || !mainWindow || mainWindow.isDestroyed()) return { canceled: true };
+    try {
+      const img = await browserView.webContents.capturePage();
+      const png = img.toPNG();
+      const { filePath, canceled } = await dialog.showSaveDialog(mainWindow, {
+        title: 'Save screenshot',
+        defaultPath: `screenshot-${Date.now()}.png`,
+        filters: [{ name: 'PNG image', extensions: ['png'] }],
+      });
+      if (canceled || !filePath) return { canceled: true };
+      fs.writeFileSync(filePath, png);
+      return { canceled: false, path: filePath };
+    } catch (err) {
+      if (mainWindow && !mainWindow.isDestroyed()) {
+        mainWindow.webContents.send('browser-load-status', 'screenshot-error', err.message || String(err));
+      }
+      return { canceled: true, error: err.message };
     }
   });
 
