@@ -19,7 +19,7 @@
     "appId": "com.httrack.gui",
     "productName": "HTTrack GUI",
     "directories": { "output": "dist" },
-    "files": ["main.js", "wrapper.html"],
+    "files": ["main.js", "preload.js", "wrapper.html"],
     "win": { "target": ["nsis", "portable"] }
   }
 }

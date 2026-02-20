@@ -9,17 +9,37 @@
     body { margin: 0; height: 100vh; font: 14px "Segoe UI", Verdana, sans-serif; }
     .row { display: flex; height: 100%; }
     .col { display: flex; flex-direction: column; min-width: 0; }
-    .col-hts { flex: 0 0 52%; border-right: 2px solid #333; }
-    .col-browser { flex: 1; background: #f0f0f0; }
-    .col-hts iframe,
-    .col-browser iframe { flex: 1; width: 100%; border: none; display: block; }
+    .col-hts { flex: 0 0 42%; border-right: 2px solid #333; }
+    .col-browser { flex: 0 0 42%; border-right: 2px solid #333; background: #f0f0f0; }
+    .col-debug {
+      flex: 1;
+      min-width: 180px;
+      max-width: 320px;
+      background: #1e1e1e;
+      color: #d4d4d4;
+      font: 12px Consolas, "Courier New", monospace;
+      padding: 8px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .col-debug .label { font-weight: bold; margin-bottom: 6px; color: #9cdcfe; }
+    .col-debug .log { white-space: pre-wrap; word-break: break-all; }
+    .col-debug .log .line { display: block; margin: 2px 0; }
+    .col-hts iframe { flex: 1; width: 100%; border: none; display: block; }
     .browser-bar {
+      flex: 0 0 48px;
+      min-height: 48px;
       display: flex;
       align-items: center;
       gap: 6px;
       padding: 6px 8px;
       background: #ddd;
       border-bottom: 1px solid #999;
+    }
+    .browser-placeholder {
+      flex: 1;
+      background: #f0f0f0;
+      min-height: 0;
     }
     .browser-bar label { flex: 0 0 auto; }
     .browser-bar input[type="text"] {
@@ -42,6 +62,10 @@
     }
     .browser-bar button:hover { background: #06b; }
     .browser-bar button:active { background: #059; }
+    .browser-bar button.secondary {
+      background: #555;
+    }
+    .browser-bar button.secondary:hover { background: #444; }
   </style>
 </head>
 <body>
@@ -54,19 +78,61 @@
         <label for="url-in">URL</label>
         <input type="text" id="url-in" placeholder="https://example.com" spellcheck="false" />
         <button type="button" id="go-btn">Go</button>
+        <button type="button" id="open-external-btn" class="secondary" title="Open in your default browser">Open in browser</button>
       </div>
-      <iframe id="browser-frame" title="Web browser" src="about:blank"></iframe>
+      <div class="browser-placeholder" id="browser-placeholder" title="Browser view (native)"></div>
+    </div>
+    <div class="col col-debug">
+      <div class="label">Debug</div>
+      <div class="log" id="debug-log"></div>
     </div>
   </div>
   <script>
     (function () {
+      var DEFAULT_URL = 'https://lucisqr.substack.com/';
       var params = new URLSearchParams(window.location.search);
       var server = params.get('server') || 'http://127.0.0.1:8080';
-      document.getElementById('hts-frame').src = server;
+
+      var debugLog = document.getElementById('debug-log');
+
+      function debug(msg, tag) {
+        var ts = new Date().toLocaleTimeString('en-GB', { hour12: false });
+        var line = document.createElement('span');
+        line.className = 'line';
+        line.textContent = '[' + ts + '] ' + (tag ? tag + ' ' : '') + msg;
+        line.style.display = 'block';
+        debugLog.appendChild(line);
+        debugLog.scrollTop = debugLog.scrollHeight;
+      }
+
+      var htsFrame = document.getElementById('hts-frame');
+      htsFrame.src = server;
+      debug('Wrapper ready, server=' + server);
+      debug('HTTrack frame loading...', 'HTS');
+
+      htsFrame.addEventListener('load', function () {
+        debug('loaded', 'HTS');
+      });
+      htsFrame.addEventListener('error', function () {
+        debug('error', 'HTS');
+      });
 
       var urlIn = document.getElementById('url-in');
-      var browserFrame = document.getElementById('browser-frame');
       var goBtn = document.getElementById('go-btn');
+
+      urlIn.value = DEFAULT_URL;
+      debug('Browser panel uses native view (Google, etc. work)', 'Browser');
+
+      if (window.electronAPI && window.electronAPI.onBrowserLoadStatus) {
+        window.electronAPI.onBrowserLoadStatus(function (status, detail) {
+          debug(status + (detail ? ' ' + detail : ''), 'Browser');
+        });
+      }
+      if (window.electronAPI && window.electronAPI.onBrowserUrlChanged) {
+        window.electronAPI.onBrowserUrlChanged(function (url) {
+          if (url && url !== 'about:blank') urlIn.value = url;
+        });
+      }
 
       function normalizeUrl(raw) {
         var s = (raw || '').trim();
@@ -77,12 +143,24 @@
 
       function go() {
         var url = normalizeUrl(urlIn.value);
-        if (url) browserFrame.src = url;
+        if (url && window.electronAPI && window.electronAPI.browserLoadUrl) {
+          window.electronAPI.browserLoadUrl(url);
+          debug('navigate ' + url, 'Browser');
+        }
       }
 
       goBtn.addEventListener('click', go);
       urlIn.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') { e.preventDefault(); go(); }
+      });
+
+      var openExternalBtn = document.getElementById('open-external-btn');
+      openExternalBtn.addEventListener('click', function () {
+        var url = normalizeUrl(urlIn.value);
+        if (url && window.electronAPI && window.electronAPI.openInBrowser) {
+          window.electronAPI.openInBrowser(url);
+          debug('opened in default browser: ' + url, 'Browser');
+        }
       });
     })();
   </script>
