@@ -7,7 +7,8 @@
       "command": "C:\\msys64\\usr\\bin\\bash",
       "args": [
         "-lc",
-        "export MSYSTEM=MINGW64 && . /etc/profile 2>/dev/null; cd ${workspaceFolder} && ./configure --prefix=/usr/local --with-zlib=/mingw64 --disable-shared 2>/dev/null; make -j8"
+        "export MSYSTEM=MINGW64 && . /etc/profile 2>/dev/null; winpath=\"$0\"; unixpath=\"/$(echo ${winpath:0:1} | tr 'A-Z' 'a-z')${winpath:2//\\\\/\/}\"; cd \"$unixpath\" && ./configure --prefix=/usr/local --with-zlib=/mingw64 --disable-shared 2>/dev/null; make -j8",
+        "${workspaceFolder}"
       ],
       "group": {
         "kind": "build",
