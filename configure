@@ -15735,7 +15735,14 @@ fi
 THREADS_CFLAGS=
 
 
-### Check for socket/nsl (solaris)
+### Check for socket/nsl (solaris) / Winsock (Windows)
+case $host_os in
+  mingw*|cygwin*)
+    SOCKET_LIBS="-lws2_32"
+    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: using -lws2_32 for Windows" >&5
+printf "%s\n" "using -lws2_32 for Windows" >&6; }
+    ;;
+  *)
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for socket in -lsocket" >&5
 printf %s "checking for socket in -lsocket... " >&6; }
 if test ${ac_cv_lib_socket_socket+y}
@@ -15781,6 +15788,8 @@ else $as_nop
   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: not necessary" >&5
 printf "%s\n" "not necessary" >&6; }
 fi
+    ;;
+esac
 
 
 

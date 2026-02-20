@@ -1293,78 +1293,13 @@ configure:15588: checking for pthread_create in -lpthread
 configure:15611: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lpthread  -lz  >&5
 configure:15611: $? = 0
 configure:15621: result: yes
-configure:15739: checking for socket in -lsocket
-configure:15762: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lsocket  -lz  >&5
-C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lsocket: No such file or directory
-collect2.exe: error: ld returned 1 exit status
-configure:15762: $? = 1
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "httrack"
-| #define PACKAGE_TARNAME "httrack"
-| #define PACKAGE_VERSION "3.49.6"
-| #define PACKAGE_STRING "httrack 3.49.6"
-| #define PACKAGE_BUGREPORT "roche+packaging@httrack.com"
-| #define PACKAGE_URL "http://www.httrack.com/"
-| #define PACKAGE "httrack"
-| #define VERSION "3.49.6"
-| #define HAVE_STDIO_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_INTTYPES_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_STRINGS_H 1
-| #define HAVE_SYS_STAT_H 1
-| #define HAVE_SYS_TYPES_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_WCHAR_H 1
-| #define STDC_HEADERS 1
-| #define _ALL_SOURCE 1
-| #define _DARWIN_C_SOURCE 1
-| #define _GNU_SOURCE 1
-| #define _HPUX_ALT_XOPEN_SOCKET_API 1
-| #define _NETBSD_SOURCE 1
-| #define _OPENBSD_SOURCE 1
-| #define _POSIX_PTHREAD_SEMANTICS 1
-| #define __STDC_WANT_IEC_60559_ATTRIBS_EXT__ 1
-| #define __STDC_WANT_IEC_60559_BFP_EXT__ 1
-| #define __STDC_WANT_IEC_60559_DFP_EXT__ 1
-| #define __STDC_WANT_IEC_60559_FUNCS_EXT__ 1
-| #define __STDC_WANT_IEC_60559_TYPES_EXT__ 1
-| #define __STDC_WANT_LIB_EXT2__ 1
-| #define __STDC_WANT_MATH_SPEC_FUNCS__ 1
-| #define _TANDEM_SOURCE 1
-| #define __EXTENSIONS__ 1
-| #define LT_OBJDIR ".libs/"
-| #define HAVE_VISIBILITY 0
-| #define SIZEOF_LONG 4
-| #define SIZEOF_LONG_LONG 8
-| #define in_port_t uint16_t
-| #define sa_family_t uint16_t
-| #define HAVE_LIBZ 1
-| #define HTS_USEOPENSSL 1
-| #define THREADS 1
-| /* end confdefs.h.  */
-| 
-| /* Override any GCC internal prototype to avoid an error.
-|    Use char because int might match the return type of a GCC
-|    builtin and then its argument prototype would still apply.  */
-| char socket ();
-| int
-| main (void)
-| {
-| return socket ();
-|   ;
-|   return 0;
-| }
-configure:15772: result: no
-configure:15781: result: not necessary
-configure:15788: checking for iconv in -liconv
-configure:15811: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -liconv  -lz  >&5
-C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\ccqd32SN.o: in function `main':
+configure:15742: result: using -lws2_32 for Windows
+configure:15797: checking for iconv in -liconv
+configure:15820: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -liconv  -lz  >&5
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\ccADtshV.o: in function `main':
 C:/git/research/httrack/conftest.c:55:(.text.startup+0xa): undefined reference to `iconv'
 collect2.exe: error: ld returned 1 exit status
-configure:15811: $? = 1
+configure:15820: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1424,13 +1359,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15821: result: no
-configure:15830: result: not necessary
-configure:15837: checking for dlopen in -ldl
-configure:15860: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -ldl  -lz  >&5
+configure:15830: result: no
+configure:15839: result: not necessary
+configure:15846: checking for dlopen in -ldl
+configure:15869: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -ldl  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -ldl: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15860: $? = 1
+configure:15869: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1490,13 +1425,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15870: result: no
-configure:15879: result: not found
-configure:15886: checking for dlopen in -lc
-configure:15909: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15879: result: no
+configure:15888: result: not found
+configure:15895: checking for dlopen in -lc
+configure:15918: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15909: $? = 1
+configure:15918: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1556,13 +1491,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15919: result: no
-configure:15928: WARNING: *** not found * this is bad
-configure:15936: checking for setuid in -lc
-configure:15959: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15928: result: no
+configure:15937: WARNING: *** not found * this is bad
+configure:15945: checking for setuid in -lc
+configure:15968: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15959: $? = 1
+configure:15968: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1622,48 +1557,48 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15969: result: no
-configure:15978: result: not found
-configure:15984: checking for snprintf
-configure:15984: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:15978: result: no
+configure:15987: result: not found
+configure:15993: checking for snprintf
+configure:15993: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
 conftest.c:63:6: warning: conflicting types for built-in function 'snprintf'; expected 'int(char *, long long unsigned int,  const char *, ...)' [-Wbuiltin-declaration-mismatch]
    63 | char snprintf ();
       |      ^~~~~~~~
 conftest.c:55:1: note: 'snprintf' is declared in header '<stdio.h>'
    54 | #include <limits.h>
    55 | #undef snprintf
-configure:15984: $? = 0
-configure:15984: result: yes
-configure:15990: checking for vsnprintf
-configure:15990: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:15993: $? = 0
+configure:15993: result: yes
+configure:15999: checking for vsnprintf
+configure:15999: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
 conftest.c:64:6: warning: conflicting types for built-in function 'vsnprintf'; expected 'int(char *, long long unsigned int,  const char *, char *)' [-Wbuiltin-declaration-mismatch]
    64 | char vsnprintf ();
       |      ^~~~~~~~~
 conftest.c:56:1: note: 'vsnprintf' is declared in header '<stdio.h>'
    55 | #include <limits.h>
    56 | #undef vsnprintf
-configure:15990: $? = 0
-configure:15990: result: yes
-configure:15997: checking for working snprintf
-configure:16027: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
-configure:16027: $? = 0
-configure:16027: ./conftest.exe
-configure:16027: $? = 0
-configure:16039: result: yes
-configure:16041: checking for working vsnprintf
-configure:16082: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
-configure:16082: $? = 0
-configure:16082: ./conftest.exe
-configure:16082: $? = 0
-configure:16094: result: yes
-configure:16111: checking for strnlen in -lc
-configure:16134: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15999: $? = 0
+configure:15999: result: yes
+configure:16006: checking for working snprintf
+configure:16036: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:16036: $? = 0
+configure:16036: ./conftest.exe
+configure:16036: $? = 0
+configure:16048: result: yes
+configure:16050: checking for working vsnprintf
+configure:16091: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:16091: $? = 0
+configure:16091: ./conftest.exe
+configure:16091: $? = 0
+configure:16103: result: yes
+configure:16120: checking for strnlen in -lc
+configure:16143: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 conftest.c:53:6: warning: conflicting types for built-in function 'strnlen'; expected 'long long unsigned int(const char *, long long unsigned int)' [-Wbuiltin-declaration-mismatch]
    53 | char strnlen ();
       |      ^~~~~~~
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:16134: $? = 1
+configure:16143: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1725,13 +1660,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16144: result: no
-configure:16153: result: not found
-configure:16159: checking whether to enable online unit tests
-configure:16179: result: no
-configure:16299: checking that generated files are newer than configure
-configure:16305: result: done
-configure:16336: creating ./config.status
+configure:16153: result: no
+configure:16162: result: not found
+configure:16168: checking whether to enable online unit tests
+configure:16188: result: no
+configure:16308: checking that generated files are newer than configure
+configure:16314: result: done
+configure:16345: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -1821,7 +1756,6 @@ ac_cv_lib_crypto_EVP_get_digestbyname=yes
 ac_cv_lib_dl_dlopen=no
 ac_cv_lib_iconv_iconv=no
 ac_cv_lib_pthread_pthread_create=yes
-ac_cv_lib_socket_socket=no
 ac_cv_lib_ssl_SSL_CTX_new=yes
 ac_cv_lib_z_inflateEnd=yes
 ac_cv_objext=o
@@ -1999,7 +1933,7 @@ SED='/usr/bin/sed'
 SET_MAKE=''
 SHELL='/bin/sh'
 SHLIBPATH_VAR='PATH'
-SOCKET_LIBS=''
+SOCKET_LIBS='-lws2_32'
 STRIP='strip'
 THREADS_CFLAGS=''
 THREADS_LIBS='-lpthread'

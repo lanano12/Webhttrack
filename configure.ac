@@ -226,9 +226,16 @@ fi
 THREADS_CFLAGS=
 AC_SUBST(THREADS_CFLAGS)
 
-### Check for socket/nsl (solaris)
-AC_CHECK_LIB(socket, socket, [SOCKET_LIBS="-lnsl -lsocket"
+### Check for socket/nsl (solaris) / Winsock (Windows)
+case $host_os in
+  mingw*|cygwin*)
+    SOCKET_LIBS="-lws2_32"
+    ;;
+  *)
+    AC_CHECK_LIB(socket, socket, [SOCKET_LIBS="-lnsl -lsocket"
 AC_DEFINE(LIBSOCKET, 1,[Check for libsocket])], AC_MSG_RESULT([not necessary]))
+    ;;
+esac
 AC_SUBST(SOCKET_LIBS)
 
 ### Check for iconv
