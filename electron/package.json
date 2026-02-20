@@ -1,0 +1,25 @@
+{
+  "name": "httrack-gui",
+  "version": "1.0.0",
+  "description": "Desktop wrapper for HTTrack web GUI (electron); Tauri version may follow.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": ["httrack", "gui", "electron"],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.httrack.gui",
+    "productName": "HTTrack GUI",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "wrapper.html"],
+    "win": { "target": ["nsis", "portable"] }
+  }
+}
