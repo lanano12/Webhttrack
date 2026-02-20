@@ -259,6 +259,8 @@ Please visit our Website: http://www.httrack.com
 #ifdef _WIN32
 #ifdef LIBHTTRACK_EXPORTS
 #define HTSEXT_API __declspec(dllexport)
+#elif defined(LIBHTTRACK_STATIC)
+#define HTSEXT_API
 #else
 #define HTSEXT_API __declspec(dllimport)
 #endif

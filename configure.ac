@@ -50,6 +50,14 @@ LT_INIT
 AC_PROG_LN_S
 LT_INIT
 
+# When building static-only (e.g. --disable-shared), programs linking libhttrack must not use dllimport on Windows
+if test "x$enable_shared" = "xno"; then
+  LIBHTTRACK_STATIC_CFLAGS="-DLIBHTTRACK_STATIC"
+else
+  LIBHTTRACK_STATIC_CFLAGS=""
+fi
+AC_SUBST(LIBHTTRACK_STATIC_CFLAGS)
+
 # Export LD_LIBRARY_PATH name or equivalent.
 AC_SUBST(SHLIBPATH_VAR,$shlibpath_var)
 

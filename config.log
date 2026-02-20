@@ -44,7 +44,7 @@ PATH: /usr/bin/core_perl/
 ## Core tests. ##
 ## ----------- ##
 
-configure:2375: loading site script /etc/config.site
+configure:2376: loading site script /etc/config.site
 | # This file is in public domain.
 | # Original author: Karlson2k (Evgeny Grin)
 | # Written for MSys2 to help running 'configure' scripts
@@ -67,46 +67,46 @@ configure:2375: loading site script /etc/config.site
 |     ${as_echo-echo} "$config_site_me:${as_lineno-$LINENO}: default prefix set to $prefix" >&5
 | fi
 config.site:13: default build_alias set to x86_64-w64-mingw32
-configure:2736: looking for aux files: config.guess config.sub ltmain.sh compile missing install-sh
-configure:2749:  trying ./
-configure:2778:   ./config.guess found
-configure:2778:   ./config.sub found
-configure:2778:   ./ltmain.sh found
-configure:2778:   ./compile found
-configure:2778:   ./missing found
-configure:2760:   ./install-sh found
-configure:2913: checking for a BSD-compatible install
-configure:2986: result: /usr/bin/install -c
-configure:2997: checking whether build environment is sane
-configure:3052: result: yes
-configure:3211: checking for a race-free mkdir -p
-configure:3255: result: /usr/bin/mkdir -p
-configure:3262: checking for gawk
-configure:3283: found /usr/bin/gawk
-configure:3294: result: gawk
-configure:3305: checking whether make sets $(MAKE)
-configure:3328: result: yes
-configure:3358: checking whether make supports nested variables
-configure:3376: result: yes
-configure:3514: checking whether to enable maintainer-specific portions of Makefiles
-configure:3524: result: no
-configure:3550: checking whether make supports the include directive
-configure:3565: make -f confmf.GNU && cat confinc.out
+configure:2737: looking for aux files: config.guess config.sub ltmain.sh compile missing install-sh
+configure:2750:  trying ./
+configure:2779:   ./config.guess found
+configure:2779:   ./config.sub found
+configure:2779:   ./ltmain.sh found
+configure:2779:   ./compile found
+configure:2779:   ./missing found
+configure:2761:   ./install-sh found
+configure:2914: checking for a BSD-compatible install
+configure:2987: result: /usr/bin/install -c
+configure:2998: checking whether build environment is sane
+configure:3053: result: yes
+configure:3212: checking for a race-free mkdir -p
+configure:3256: result: /usr/bin/mkdir -p
+configure:3263: checking for gawk
+configure:3284: found /usr/bin/gawk
+configure:3295: result: gawk
+configure:3306: checking whether make sets $(MAKE)
+configure:3329: result: yes
+configure:3359: checking whether make supports nested variables
+configure:3377: result: yes
+configure:3515: checking whether to enable maintainer-specific portions of Makefiles
+configure:3525: result: no
+configure:3551: checking whether make supports the include directive
+configure:3566: make -f confmf.GNU && cat confinc.out
 this is the am__doit target
-configure:3568: $? = 0
-configure:3587: result: yes (GNU style)
-configure:3663: checking for gcc
-configure:3684: found /mingw64/bin/gcc
-configure:3695: result: gcc
-configure:4048: checking for C compiler version
-configure:4057: gcc --version >&5
+configure:3569: $? = 0
+configure:3588: result: yes (GNU style)
+configure:3664: checking for gcc
+configure:3685: found /mingw64/bin/gcc
+configure:3696: result: gcc
+configure:4049: checking for C compiler version
+configure:4058: gcc --version >&5
 gcc.exe (Rev11, Built by MSYS2 project) 15.2.0
 Copyright (C) 2025 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:4068: $? = 0
-configure:4057: gcc -v >&5
+configure:4069: $? = 0
+configure:4058: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=C:\msys64\mingw64\bin\gcc.exe
 COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -115,113 +115,113 @@ Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 15.2.0 (Rev11, Built by MSYS2 project) 
-configure:4068: $? = 0
-configure:4057: gcc -V >&5
+configure:4069: $? = 0
+configure:4058: gcc -V >&5
 gcc.exe: error: unrecognized command-line option '-V'
 gcc.exe: fatal error: no input files
 compilation terminated.
-configure:4068: $? = 1
-configure:4057: gcc -qversion >&5
+configure:4069: $? = 1
+configure:4058: gcc -qversion >&5
 gcc.exe: error: unrecognized command-line option '-qversion'; did you mean '--version'?
 gcc.exe: fatal error: no input files
 compilation terminated.
-configure:4068: $? = 1
-configure:4057: gcc -version >&5
+configure:4069: $? = 1
+configure:4058: gcc -version >&5
 gcc.exe: error: unrecognized command-line option '-version'
 gcc.exe: fatal error: no input files
 compilation terminated.
-configure:4068: $? = 1
-configure:4088: checking whether the C compiler works
-configure:4110: gcc    conftest.c  >&5
-configure:4114: $? = 0
-configure:4164: result: yes
-configure:4167: checking for C compiler default output file name
-configure:4169: result: a.exe
-configure:4175: checking for suffix of executables
-configure:4182: gcc -o conftest.exe    conftest.c  >&5
-configure:4186: $? = 0
-configure:4209: result: .exe
-configure:4231: checking whether we are cross compiling
-configure:4239: gcc -o conftest.exe    conftest.c  >&5
-configure:4243: $? = 0
-configure:4250: ./conftest.exe
-configure:4254: $? = 0
-configure:4269: result: no
-configure:4274: checking for suffix of object files
-configure:4297: gcc -c   conftest.c >&5
-configure:4301: $? = 0
-configure:4323: result: o
-configure:4327: checking whether the compiler supports GNU C
-configure:4347: gcc -c   conftest.c >&5
-configure:4347: $? = 0
-configure:4357: result: yes
-configure:4368: checking whether gcc accepts -g
-configure:4389: gcc -c -g  conftest.c >&5
-configure:4389: $? = 0
-configure:4433: result: yes
-configure:4453: checking for gcc option to enable C11 features
-configure:4468: gcc  -c -g -O2  conftest.c >&5
+configure:4069: $? = 1
+configure:4089: checking whether the C compiler works
+configure:4111: gcc    conftest.c  >&5
+configure:4115: $? = 0
+configure:4165: result: yes
+configure:4168: checking for C compiler default output file name
+configure:4170: result: a.exe
+configure:4176: checking for suffix of executables
+configure:4183: gcc -o conftest.exe    conftest.c  >&5
+configure:4187: $? = 0
+configure:4210: result: .exe
+configure:4232: checking whether we are cross compiling
+configure:4240: gcc -o conftest.exe    conftest.c  >&5
+configure:4244: $? = 0
+configure:4251: ./conftest.exe
+configure:4255: $? = 0
+configure:4270: result: no
+configure:4275: checking for suffix of object files
+configure:4298: gcc -c   conftest.c >&5
+configure:4302: $? = 0
+configure:4324: result: o
+configure:4328: checking whether the compiler supports GNU C
+configure:4348: gcc -c   conftest.c >&5
+configure:4348: $? = 0
+configure:4358: result: yes
+configure:4369: checking whether gcc accepts -g
+configure:4390: gcc -c -g  conftest.c >&5
+configure:4390: $? = 0
+configure:4434: result: yes
+configure:4454: checking for gcc option to enable C11 features
+configure:4469: gcc  -c -g -O2  conftest.c >&5
 conftest.c: In function 'e':
 conftest.c:25:14: warning: old-style function definition [-Wold-style-definition]
    25 | static char *e (p, i)
       |              ^
-configure:4468: $? = 0
-configure:4486: result: none needed
-configure:4602: checking whether gcc understands -c and -o together
-configure:4625: gcc -c conftest.c -o conftest2.o
-configure:4628: $? = 0
-configure:4625: gcc -c conftest.c -o conftest2.o
-configure:4628: $? = 0
-configure:4640: result: yes
-configure:4659: checking dependency style of gcc
-configure:4771: result: gcc3
-configure:4791: checking for stdio.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for stdlib.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for string.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for inttypes.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for stdint.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for strings.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for sys/stat.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for sys/types.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for unistd.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for wchar.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
-configure:4791: $? = 0
-configure:4791: result: yes
-configure:4791: checking for minix/config.h
-configure:4791: gcc -c -g -O2  conftest.c >&5
+configure:4469: $? = 0
+configure:4487: result: none needed
+configure:4603: checking whether gcc understands -c and -o together
+configure:4626: gcc -c conftest.c -o conftest2.o
+configure:4629: $? = 0
+configure:4626: gcc -c conftest.c -o conftest2.o
+configure:4629: $? = 0
+configure:4641: result: yes
+configure:4660: checking dependency style of gcc
+configure:4772: result: gcc3
+configure:4792: checking for stdio.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for stdlib.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for string.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for inttypes.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for stdint.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for strings.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for sys/stat.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for sys/types.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for unistd.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for wchar.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
+configure:4792: $? = 0
+configure:4792: result: yes
+configure:4792: checking for minix/config.h
+configure:4792: gcc -c -g -O2  conftest.c >&5
 conftest.c:49:10: fatal error: minix/config.h: No such file or directory
    49 | #include <minix/config.h>
       |          ^~~~~~~~~~~~~~~~
 compilation terminated.
-configure:4791: $? = 1
+configure:4792: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -272,26 +272,26 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <minix/config.h>
-configure:4791: result: no
-configure:4822: checking whether it is safe to define __EXTENSIONS__
-configure:4841: gcc -c -g -O2  conftest.c >&5
-configure:4841: $? = 0
-configure:4849: result: yes
-configure:4852: checking whether _XOPEN_SOURCE should be defined
-configure:4874: gcc -c -g -O2  conftest.c >&5
-configure:4874: $? = 0
-configure:4901: result: no
-configure:5011: checking for gcc
-configure:5043: result: gcc
-configure:5396: checking for C compiler version
-configure:5405: gcc --version >&5
+configure:4792: result: no
+configure:4823: checking whether it is safe to define __EXTENSIONS__
+configure:4842: gcc -c -g -O2  conftest.c >&5
+configure:4842: $? = 0
+configure:4850: result: yes
+configure:4853: checking whether _XOPEN_SOURCE should be defined
+configure:4875: gcc -c -g -O2  conftest.c >&5
+configure:4875: $? = 0
+configure:4902: result: no
+configure:5012: checking for gcc
+configure:5044: result: gcc
+configure:5397: checking for C compiler version
+configure:5406: gcc --version >&5
 gcc.exe (Rev11, Built by MSYS2 project) 15.2.0
 Copyright (C) 2025 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:5416: $? = 0
-configure:5405: gcc -v >&5
+configure:5417: $? = 0
+configure:5406: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=C:\msys64\mingw64\bin\gcc.exe
 COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -300,56 +300,56 @@ Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 15.2.0 (Rev11, Built by MSYS2 project) 
-configure:5416: $? = 0
-configure:5405: gcc -V >&5
+configure:5417: $? = 0
+configure:5406: gcc -V >&5
 gcc.exe: error: unrecognized command-line option '-V'
 gcc.exe: fatal error: no input files
 compilation terminated.
-configure:5416: $? = 1
-configure:5405: gcc -qversion >&5
+configure:5417: $? = 1
+configure:5406: gcc -qversion >&5
 gcc.exe: error: unrecognized command-line option '-qversion'; did you mean '--version'?
 gcc.exe: fatal error: no input files
 compilation terminated.
-configure:5416: $? = 1
-configure:5405: gcc -version >&5
+configure:5417: $? = 1
+configure:5406: gcc -version >&5
 gcc.exe: error: unrecognized command-line option '-version'
 gcc.exe: fatal error: no input files
 compilation terminated.
-configure:5416: $? = 1
-configure:5420: checking whether the compiler supports GNU C
-configure:5450: result: yes
-configure:5461: checking whether gcc accepts -g
-configure:5526: result: yes
-configure:5546: checking for gcc option to enable C11 features
-configure:5579: result: none needed
-configure:5695: checking whether gcc understands -c and -o together
-configure:5733: result: yes
-configure:5752: checking dependency style of gcc
-configure:5864: result: gcc3
-configure:5883: checking for grep that handles long lines and -e
-configure:5947: result: /usr/bin/grep
-configure:5952: checking for egrep
-configure:6020: result: /usr/bin/grep -E
-configure:6058: checking build system type
-configure:6073: result: x86_64-w64-mingw32
-configure:6093: checking host system type
-configure:6107: result: x86_64-w64-mingw32
-configure:6148: checking how to print strings
-configure:6175: result: printf
-configure:6196: checking for a sed that does not truncate output
-configure:6266: result: /usr/bin/sed
-configure:6284: checking for fgrep
-configure:6352: result: /usr/bin/grep -F
-configure:6388: checking for ld used by gcc
-configure:6456: result: C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
-configure:6463: checking if the linker (C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe) is GNU ld
-configure:6479: result: yes
-configure:6491: checking for BSD- or MS-compatible name lister (nm)
-configure:6546: result: /mingw64/bin/nm -B
-configure:6686: checking the name lister (/mingw64/bin/nm -B) interface
-configure:6694: gcc -c -g -O2  conftest.c >&5
-configure:6697: /mingw64/bin/nm -B "conftest.o"
-configure:6700: output
+configure:5417: $? = 1
+configure:5421: checking whether the compiler supports GNU C
+configure:5451: result: yes
+configure:5462: checking whether gcc accepts -g
+configure:5527: result: yes
+configure:5547: checking for gcc option to enable C11 features
+configure:5580: result: none needed
+configure:5696: checking whether gcc understands -c and -o together
+configure:5734: result: yes
+configure:5753: checking dependency style of gcc
+configure:5865: result: gcc3
+configure:5884: checking for grep that handles long lines and -e
+configure:5948: result: /usr/bin/grep
+configure:5953: checking for egrep
+configure:6021: result: /usr/bin/grep -E
+configure:6059: checking build system type
+configure:6074: result: x86_64-w64-mingw32
+configure:6094: checking host system type
+configure:6108: result: x86_64-w64-mingw32
+configure:6149: checking how to print strings
+configure:6176: result: printf
+configure:6197: checking for a sed that does not truncate output
+configure:6267: result: /usr/bin/sed
+configure:6285: checking for fgrep
+configure:6353: result: /usr/bin/grep -F
+configure:6389: checking for ld used by gcc
+configure:6457: result: C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
+configure:6464: checking if the linker (C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe) is GNU ld
+configure:6480: result: yes
+configure:6492: checking for BSD- or MS-compatible name lister (nm)
+configure:6547: result: /mingw64/bin/nm -B
+configure:6687: checking the name lister (/mingw64/bin/nm -B) interface
+configure:6695: gcc -c -g -O2  conftest.c >&5
+configure:6698: /mingw64/bin/nm -B "conftest.o"
+configure:6701: output
 0000000000000000 b .bss
 0000000000000000 d .data
 0000000000000000 N .debug_abbrev
@@ -360,73 +360,73 @@ configure:6700: output
 0000000000000000 r .rdata$zzz
 0000000000000000 t .text
 0000000000000000 B some_variable
-configure:6707: result: BSD nm
-configure:6710: checking whether ln -s works
-configure:6717: result: no, using cp -pR
-configure:6722: checking the maximum length of command line arguments
-configure:6854: result: 8192
-configure:6902: checking how to convert x86_64-w64-mingw32 file names to x86_64-w64-mingw32 format
-configure:6943: result: func_convert_file_msys_to_w32
-configure:6950: checking how to convert x86_64-w64-mingw32 file names to toolchain format
-configure:6971: result: func_convert_file_msys_to_w32
-configure:6978: checking for C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe option to reload object files
-configure:6986: result: -r
-configure:7065: checking for file
-configure:7086: found /usr/bin/file
-configure:7097: result: file
-configure:7173: checking for objdump
-configure:7194: found /mingw64/bin/objdump
-configure:7205: result: objdump
-configure:7237: checking how to recognize dependent libraries
-configure:7438: result: file_magic ^x86 archive import|^x86 DLL
-configure:7528: checking for dlltool
-configure:7549: found /mingw64/bin/dlltool
-configure:7560: result: dlltool
-configure:7593: checking how to associate runtime and link libraries
-configure:7621: result: func_cygming_dll_for_implib
-configure:7686: checking for ar
-configure:7707: found /mingw64/bin/ar
-configure:7718: result: ar
-configure:7771: checking for archiver @FILE support
-configure:7789: gcc -c -g -O2  conftest.c >&5
-configure:7789: $? = 0
-configure:7793: ar cr libconftest.a @conftest.lst >&5
-configure:7796: $? = 0
-configure:7801: ar cr libconftest.a @conftest.lst >&5
+configure:6708: result: BSD nm
+configure:6711: checking whether ln -s works
+configure:6718: result: no, using cp -pR
+configure:6723: checking the maximum length of command line arguments
+configure:6855: result: 8192
+configure:6903: checking how to convert x86_64-w64-mingw32 file names to x86_64-w64-mingw32 format
+configure:6944: result: func_convert_file_msys_to_w32
+configure:6951: checking how to convert x86_64-w64-mingw32 file names to toolchain format
+configure:6972: result: func_convert_file_msys_to_w32
+configure:6979: checking for C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe option to reload object files
+configure:6987: result: -r
+configure:7066: checking for file
+configure:7087: found /usr/bin/file
+configure:7098: result: file
+configure:7174: checking for objdump
+configure:7195: found /mingw64/bin/objdump
+configure:7206: result: objdump
+configure:7238: checking how to recognize dependent libraries
+configure:7439: result: file_magic ^x86 archive import|^x86 DLL
+configure:7529: checking for dlltool
+configure:7550: found /mingw64/bin/dlltool
+configure:7561: result: dlltool
+configure:7594: checking how to associate runtime and link libraries
+configure:7622: result: func_cygming_dll_for_implib
+configure:7687: checking for ar
+configure:7708: found /mingw64/bin/ar
+configure:7719: result: ar
+configure:7772: checking for archiver @FILE support
+configure:7790: gcc -c -g -O2  conftest.c >&5
+configure:7790: $? = 0
+configure:7794: ar cr libconftest.a @conftest.lst >&5
+configure:7797: $? = 0
+configure:7802: ar cr libconftest.a @conftest.lst >&5
 C:\msys64\mingw64\bin\ar.exe: conftest.o: No such file or directory
-configure:7804: $? = 1
-configure:7816: result: @
-configure:7879: checking for strip
-configure:7900: found /mingw64/bin/strip
-configure:7911: result: strip
-configure:7988: checking for ranlib
-configure:8009: found /mingw64/bin/ranlib
-configure:8020: result: ranlib
-configure:8122: checking command to parse /mingw64/bin/nm -B output from gcc object
-configure:8276: gcc -c -g -O2  conftest.c >&5
-configure:8279: $? = 0
-configure:8283: /mingw64/bin/nm -B conftest.o | /usr/bin/sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)\{0,1\}$/\1 \2 \2/p' | /usr/bin/sed '/ __gnu_lto/d' > conftest.nm
-configure:8349: gcc -o conftest.exe -g -O2   conftest.c conftstm.o >&5
-configure:8352: $? = 0
-configure:8390: result: ok
-configure:8437: checking for sysroot
-configure:8468: result: no
-configure:8475: checking for a working dd
-configure:8519: result: /usr/bin/dd
-configure:8523: checking how to truncate binary pipes
-configure:8539: result: /usr/bin/dd bs=4096 count=1
-configure:8876: checking for mt
-configure:8911: result: no
-configure:8931: checking if : is a manifest tool
-configure:8938: : '-?'
-configure:8946: result: no
-configure:9667: checking for dlfcn.h
-configure:9667: gcc -c -g -O2  conftest.c >&5
+configure:7805: $? = 1
+configure:7817: result: @
+configure:7880: checking for strip
+configure:7901: found /mingw64/bin/strip
+configure:7912: result: strip
+configure:7989: checking for ranlib
+configure:8010: found /mingw64/bin/ranlib
+configure:8021: result: ranlib
+configure:8123: checking command to parse /mingw64/bin/nm -B output from gcc object
+configure:8277: gcc -c -g -O2  conftest.c >&5
+configure:8280: $? = 0
+configure:8284: /mingw64/bin/nm -B conftest.o | /usr/bin/sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)\{0,1\}$/\1 \2 \2/p' | /usr/bin/sed '/ __gnu_lto/d' > conftest.nm
+configure:8350: gcc -o conftest.exe -g -O2   conftest.c conftstm.o >&5
+configure:8353: $? = 0
+configure:8391: result: ok
+configure:8438: checking for sysroot
+configure:8469: result: no
+configure:8476: checking for a working dd
+configure:8520: result: /usr/bin/dd
+configure:8524: checking how to truncate binary pipes
+configure:8540: result: /usr/bin/dd bs=4096 count=1
+configure:8877: checking for mt
+configure:8912: result: no
+configure:8932: checking if : is a manifest tool
+configure:8939: : '-?'
+configure:8947: result: no
+configure:9668: checking for dlfcn.h
+configure:9668: gcc -c -g -O2  conftest.c >&5
 conftest.c:67:10: fatal error: dlfcn.h: No such file or directory
    67 | #include <dlfcn.h>
       |          ^~~~~~~~~
 compilation terminated.
-configure:9667: $? = 1
+configure:9668: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -495,115 +495,115 @@ configure: failed program was:
 | #endif
 | 
 | #include <dlfcn.h>
-configure:9667: result: no
-configure:9926: checking for objdir
-configure:9942: result: .libs
-configure:10206: checking if gcc supports -fno-rtti -fno-exceptions
-configure:10225: gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
+configure:9668: result: no
+configure:9927: checking for objdir
+configure:9943: result: .libs
+configure:10207: checking if gcc supports -fno-rtti -fno-exceptions
+configure:10226: gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
 cc1.exe: warning: command-line option '-fno-rtti' is valid for C++/D/ObjC++ but not for C
-configure:10229: $? = 0
-configure:10242: result: no
-configure:10606: checking for gcc option to produce PIC
-configure:10614: result: -DDLL_EXPORT -DPIC
-configure:10622: checking if gcc PIC flag -DDLL_EXPORT -DPIC works
-configure:10641: gcc -c -g -O2  -DDLL_EXPORT -DPIC -DPIC conftest.c >&5
-configure:10645: $? = 0
-configure:10658: result: yes
-configure:10687: checking if gcc static flag -static works
-configure:10716: result: yes
-configure:10731: checking if gcc supports -c -o file.o
-configure:10753: gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
-configure:10757: $? = 0
-configure:10779: result: yes
-configure:10787: checking if gcc supports -c -o file.o
-configure:10835: result: yes
-configure:10868: checking whether the gcc linker (C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries
-configure:12142: result: yes
-configure:12383: checking dynamic linker characteristics
-configure:13216: result: Win32 ld.exe
-configure:13338: checking how to hardcode library paths into programs
-configure:13363: result: immediate
-configure:13915: checking whether stripping libraries is possible
-configure:13924: result: yes
-configure:13966: checking if libtool supports shared libraries
-configure:13968: result: yes
-configure:13971: checking whether to build shared libraries
-configure:13996: result: no
-configure:13999: checking whether to build static libraries
-configure:14003: result: yes
-configure:14040: checking whether ln -s works
-configure:14047: result: no, using cp -pR
-configure:14076: checking whether C compiler accepts -Wparentheses
-configure:14096: gcc -c -g -O2  -Wparentheses  conftest.c >&5
-configure:14096: $? = 0
-configure:14105: result: yes
-configure:14114: checking whether C compiler accepts -Winit-self
-configure:14134: gcc -c -g -O2  -Winit-self  conftest.c >&5
-configure:14134: $? = 0
-configure:14143: result: yes
-configure:14152: checking whether C compiler accepts -Wunused-but-set-parameter
-configure:14172: gcc -c -g -O2  -Wunused-but-set-parameter  conftest.c >&5
-configure:14172: $? = 0
-configure:14181: result: yes
-configure:14190: checking whether C compiler accepts -Waddress
-configure:14210: gcc -c -g -O2  -Waddress  conftest.c >&5
-configure:14210: $? = 0
-configure:14219: result: yes
-configure:14228: checking whether C compiler accepts -Wuninitialized
-configure:14248: gcc -c -g -O2  -Wuninitialized  conftest.c >&5
-configure:14248: $? = 0
-configure:14257: result: yes
-configure:14266: checking whether C compiler accepts -Wformat=2
-configure:14286: gcc -c -g -O2  -Wformat=2  conftest.c >&5
-configure:14286: $? = 0
-configure:14295: result: yes
-configure:14304: checking whether C compiler accepts -Wformat-nonliteral
-configure:14324: gcc -c -g -O2  -Wformat-nonliteral  conftest.c >&5
+configure:10230: $? = 0
+configure:10243: result: no
+configure:10607: checking for gcc option to produce PIC
+configure:10615: result: -DDLL_EXPORT -DPIC
+configure:10623: checking if gcc PIC flag -DDLL_EXPORT -DPIC works
+configure:10642: gcc -c -g -O2  -DDLL_EXPORT -DPIC -DPIC conftest.c >&5
+configure:10646: $? = 0
+configure:10659: result: yes
+configure:10688: checking if gcc static flag -static works
+configure:10717: result: yes
+configure:10732: checking if gcc supports -c -o file.o
+configure:10754: gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
+configure:10758: $? = 0
+configure:10780: result: yes
+configure:10788: checking if gcc supports -c -o file.o
+configure:10836: result: yes
+configure:10869: checking whether the gcc linker (C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries
+configure:12143: result: yes
+configure:12384: checking dynamic linker characteristics
+configure:13217: result: Win32 ld.exe
+configure:13339: checking how to hardcode library paths into programs
+configure:13364: result: immediate
+configure:13916: checking whether stripping libraries is possible
+configure:13925: result: yes
+configure:13967: checking if libtool supports shared libraries
+configure:13969: result: yes
+configure:13972: checking whether to build shared libraries
+configure:13997: result: no
+configure:14000: checking whether to build static libraries
+configure:14004: result: yes
+configure:14041: checking whether ln -s works
+configure:14048: result: no, using cp -pR
+configure:14077: checking whether C compiler accepts -Wparentheses
+configure:14097: gcc -c -g -O2  -Wparentheses  conftest.c >&5
+configure:14097: $? = 0
+configure:14106: result: yes
+configure:14115: checking whether C compiler accepts -Winit-self
+configure:14135: gcc -c -g -O2  -Winit-self  conftest.c >&5
+configure:14135: $? = 0
+configure:14144: result: yes
+configure:14153: checking whether C compiler accepts -Wunused-but-set-parameter
+configure:14173: gcc -c -g -O2  -Wunused-but-set-parameter  conftest.c >&5
+configure:14173: $? = 0
+configure:14182: result: yes
+configure:14191: checking whether C compiler accepts -Waddress
+configure:14211: gcc -c -g -O2  -Waddress  conftest.c >&5
+configure:14211: $? = 0
+configure:14220: result: yes
+configure:14229: checking whether C compiler accepts -Wuninitialized
+configure:14249: gcc -c -g -O2  -Wuninitialized  conftest.c >&5
+configure:14249: $? = 0
+configure:14258: result: yes
+configure:14267: checking whether C compiler accepts -Wformat=2
+configure:14287: gcc -c -g -O2  -Wformat=2  conftest.c >&5
+configure:14287: $? = 0
+configure:14296: result: yes
+configure:14305: checking whether C compiler accepts -Wformat-nonliteral
+configure:14325: gcc -c -g -O2  -Wformat-nonliteral  conftest.c >&5
 cc1.exe: warning: '-Wformat-nonliteral' ignored without '-Wformat' [-Wformat-nonliteral]
-configure:14324: $? = 0
-configure:14333: result: yes
-configure:14342: checking whether C compiler accepts -Wmissing-parameter-type
-configure:14362: gcc -c -g -O2  -Wmissing-parameter-type  conftest.c >&5
-configure:14362: $? = 0
-configure:14371: result: yes
-configure:14380: checking whether C compiler accepts -Wold-style-definition
-configure:14400: gcc -c -g -O2  -Wold-style-definition  conftest.c >&5
-configure:14400: $? = 0
-configure:14409: result: yes
-configure:14418: checking whether C compiler accepts -Wignored-qualifiers
-configure:14438: gcc -c -g -O2  -Wignored-qualifiers  conftest.c >&5
-configure:14438: $? = 0
-configure:14447: result: yes
-configure:14456: checking whether C compiler accepts -fstrict-aliasing -Wstrict-aliasing
-configure:14476: gcc -c -g -O2  -fstrict-aliasing -Wstrict-aliasing  conftest.c >&5
-configure:14476: $? = 0
-configure:14485: result: yes
-configure:14494: checking whether C compiler accepts -fstack-protector
-configure:14514: gcc -c -g -O2  -fstack-protector  conftest.c >&5
-configure:14514: $? = 0
-configure:14523: result: yes
-configure:14532: checking whether C compiler accepts -fstack-clash-protection
-configure:14552: gcc -c -g -O2  -fstack-clash-protection  conftest.c >&5
-configure:14552: $? = 0
-configure:14561: result: yes
-configure:14570: checking whether C compiler accepts -fcf-protection
-configure:14590: gcc -c -g -O2  -fcf-protection  conftest.c >&5
-configure:14590: $? = 0
-configure:14599: result: yes
-configure:14608: checking whether the linker accepts -Wl,--discard-all
-configure:14628: gcc -o conftest.exe -g -O2    -Wl,--discard-all conftest.c  >&5
-configure:14628: $? = 0
-configure:14638: result: yes
-configure:14647: checking whether the linker accepts -Wl,--no-undefined
-configure:14667: gcc -o conftest.exe -g -O2    -Wl,--no-undefined conftest.c  >&5
-configure:14667: $? = 0
-configure:14677: result: yes
-configure:14686: checking whether the linker accepts -Wl,-z,relro,-z,now
-configure:14706: gcc -o conftest.exe -g -O2    -Wl,-z,relro,-z,now conftest.c  >&5
+configure:14325: $? = 0
+configure:14334: result: yes
+configure:14343: checking whether C compiler accepts -Wmissing-parameter-type
+configure:14363: gcc -c -g -O2  -Wmissing-parameter-type  conftest.c >&5
+configure:14363: $? = 0
+configure:14372: result: yes
+configure:14381: checking whether C compiler accepts -Wold-style-definition
+configure:14401: gcc -c -g -O2  -Wold-style-definition  conftest.c >&5
+configure:14401: $? = 0
+configure:14410: result: yes
+configure:14419: checking whether C compiler accepts -Wignored-qualifiers
+configure:14439: gcc -c -g -O2  -Wignored-qualifiers  conftest.c >&5
+configure:14439: $? = 0
+configure:14448: result: yes
+configure:14457: checking whether C compiler accepts -fstrict-aliasing -Wstrict-aliasing
+configure:14477: gcc -c -g -O2  -fstrict-aliasing -Wstrict-aliasing  conftest.c >&5
+configure:14477: $? = 0
+configure:14486: result: yes
+configure:14495: checking whether C compiler accepts -fstack-protector
+configure:14515: gcc -c -g -O2  -fstack-protector  conftest.c >&5
+configure:14515: $? = 0
+configure:14524: result: yes
+configure:14533: checking whether C compiler accepts -fstack-clash-protection
+configure:14553: gcc -c -g -O2  -fstack-clash-protection  conftest.c >&5
+configure:14553: $? = 0
+configure:14562: result: yes
+configure:14571: checking whether C compiler accepts -fcf-protection
+configure:14591: gcc -c -g -O2  -fcf-protection  conftest.c >&5
+configure:14591: $? = 0
+configure:14600: result: yes
+configure:14609: checking whether the linker accepts -Wl,--discard-all
+configure:14629: gcc -o conftest.exe -g -O2    -Wl,--discard-all conftest.c  >&5
+configure:14629: $? = 0
+configure:14639: result: yes
+configure:14648: checking whether the linker accepts -Wl,--no-undefined
+configure:14668: gcc -o conftest.exe -g -O2    -Wl,--no-undefined conftest.c  >&5
+configure:14668: $? = 0
+configure:14678: result: yes
+configure:14687: checking whether the linker accepts -Wl,-z,relro,-z,now
+configure:14707: gcc -o conftest.exe -g -O2    -Wl,-z,relro,-z,now conftest.c  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unrecognized option '-z'
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: use the --help option for usage information
 collect2.exe: error: ld returned 1 exit status
-configure:14706: $? = 1
+configure:14707: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -651,13 +651,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:14716: result: no
-configure:14725: checking whether the linker accepts -Wl,-z,noexecstack
-configure:14745: gcc -o conftest.exe -g -O2    -Wl,-z,noexecstack conftest.c  >&5
+configure:14717: result: no
+configure:14726: checking whether the linker accepts -Wl,-z,noexecstack
+configure:14746: gcc -o conftest.exe -g -O2    -Wl,-z,noexecstack conftest.c  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unrecognized option '-z'
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: use the --help option for usage information
 collect2.exe: error: ld returned 1 exit status
-configure:14745: $? = 1
+configure:14746: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -705,19 +705,19 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:14755: result: no
-configure:14768: checking whether C compiler accepts -fpie -pie
-configure:14788: gcc -c -g -O2  -fpie -pie  conftest.c >&5
-configure:14788: $? = 0
-configure:14797: result: yes
-configure:14806: checking whether the linker accepts -pie
-configure:14826: gcc -o conftest.exe -g -O2    -pie conftest.c  >&5
-configure:14826: $? = 0
-configure:14836: result: yes
-configure:14849: checking whether C compiler accepts -rdynamic
-configure:14869: gcc -c -g -O2  -rdynamic  conftest.c >&5
+configure:14756: result: no
+configure:14769: checking whether C compiler accepts -fpie -pie
+configure:14789: gcc -c -g -O2  -fpie -pie  conftest.c >&5
+configure:14789: $? = 0
+configure:14798: result: yes
+configure:14807: checking whether the linker accepts -pie
+configure:14827: gcc -o conftest.exe -g -O2    -pie conftest.c  >&5
+configure:14827: $? = 0
+configure:14837: result: yes
+configure:14850: checking whether C compiler accepts -rdynamic
+configure:14870: gcc -c -g -O2  -rdynamic  conftest.c >&5
 gcc.exe: error: unrecognized command-line option '-rdynamic'
-configure:14869: $? = 1
+configure:14870: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -765,13 +765,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:14878: result: no
-configure:14894: checking whether the -Werror option is usable
-configure:14913: gcc -c -g -O2 -Werror  conftest.c >&5
-configure:14913: $? = 0
-configure:14923: result: yes
-configure:14925: checking for simple visibility declarations
-configure:14957: gcc -c -g -O2 -fvisibility=hidden -Werror  conftest.c >&5
+configure:14879: result: no
+configure:14895: checking whether the -Werror option is usable
+configure:14914: gcc -c -g -O2 -Werror  conftest.c >&5
+configure:14914: $? = 0
+configure:14924: result: yes
+configure:14926: checking for simple visibility declarations
+configure:14958: gcc -c -g -O2 -fvisibility=hidden -Werror  conftest.c >&5
 conftest.c: In function 'hiddenfunc':
 conftest.c:46:50: error: visibility attribute not supported in this configuration; ignored [-Werror=attributes]
    46 |               int hiddenfunc (void) { return 51; }
@@ -781,7 +781,7 @@ conftest.c:56:1: error: visibility attribute not supported in this configuration
    56 | }
       | ^
 cc1.exe: all warnings being treated as errors
-configure:14957: $? = 1
+configure:14958: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -839,26 +839,26 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:14967: result: no
-configure:14996: checking size of long
-configure:15002: gcc -o conftest.exe -g -O2   conftest.c  >&5
-configure:15002: $? = 0
-configure:15002: ./conftest.exe
-configure:15002: $? = 0
-configure:15017: result: 4
-configure:15029: checking size of long long
-configure:15035: gcc -o conftest.exe -g -O2   conftest.c  >&5
-configure:15035: $? = 0
-configure:15035: ./conftest.exe
-configure:15035: $? = 0
-configure:15050: result: 8
-configure:15060: checking for in_addr_t
-configure:15060: gcc -c -g -O2  conftest.c >&5
+configure:14968: result: no
+configure:14997: checking size of long
+configure:15003: gcc -o conftest.exe -g -O2   conftest.c  >&5
+configure:15003: $? = 0
+configure:15003: ./conftest.exe
+configure:15003: $? = 0
+configure:15018: result: 4
+configure:15030: checking size of long long
+configure:15036: gcc -o conftest.exe -g -O2   conftest.c  >&5
+configure:15036: $? = 0
+configure:15036: ./conftest.exe
+configure:15036: $? = 0
+configure:15051: result: 8
+configure:15061: checking for in_addr_t
+configure:15061: gcc -c -g -O2  conftest.c >&5
 conftest.c:43:10: fatal error: netinet/in.h: No such file or directory
    43 | #include <netinet/in.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-configure:15060: $? = 1
+configure:15061: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -913,15 +913,15 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15060: result: no
-configure:15070: WARNING: *** in_addr_t not found
-configure:15076: checking for in_port_t
-configure:15076: gcc -c -g -O2  conftest.c >&5
+configure:15061: result: no
+configure:15071: WARNING: *** in_addr_t not found
+configure:15077: checking for in_port_t
+configure:15077: gcc -c -g -O2  conftest.c >&5
 conftest.c:44:10: fatal error: netinet/in.h: No such file or directory
    44 | #include <netinet/in.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-configure:15076: $? = 1
+configure:15077: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -977,14 +977,14 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15076: result: no
-configure:15092: checking for sa_family_t
-configure:15092: gcc -c -g -O2  conftest.c >&5
+configure:15077: result: no
+configure:15093: checking for sa_family_t
+configure:15093: gcc -c -g -O2  conftest.c >&5
 conftest.c:45:10: fatal error: netinet/in.h: No such file or directory
    45 | #include <netinet/in.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-configure:15092: $? = 1
+configure:15093: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1041,20 +1041,20 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15092: result: no
-configure:15108: checking if pointers to integers require aligned access
-configure:15142: gcc -o conftest.exe -g -O2   conftest.c  >&5
-configure:15142: $? = 0
-configure:15142: ./conftest.exe
-configure:15142: $? = 0
-configure:15153: result: no
-configure:15170: checking for execinfo.h
-configure:15170: gcc -c -g -O2  conftest.c >&5
+configure:15093: result: no
+configure:15109: checking if pointers to integers require aligned access
+configure:15143: gcc -o conftest.exe -g -O2   conftest.c  >&5
+configure:15143: $? = 0
+configure:15143: ./conftest.exe
+configure:15143: $? = 0
+configure:15154: result: no
+configure:15171: checking for execinfo.h
+configure:15171: gcc -c -g -O2  conftest.c >&5
 conftest.c:72:10: fatal error: execinfo.h: No such file or directory
    72 | #include <execinfo.h>
       |          ^~~~~~~~~~~~
 compilation terminated.
-configure:15170: $? = 1
+configure:15171: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1128,36 +1128,36 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <execinfo.h>
-configure:15170: result: no
-configure:15182: checking if zlib is wanted
-configure:15189: result: yes
-configure:15225: checking for inflateEnd in -lz
-configure:15248: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz   >&5
-configure:15248: $? = 0
-configure:15258: result: yes
-configure:15267: checking for zlib.h
-configure:15267: gcc -c -g -O2  -I/mingw64/include conftest.c >&5
-configure:15267: $? = 0
-configure:15267: result: yes
-configure:15286: checking for inflateEnd in -lz
-configure:15319: result: yes
-configure:15329: checking zlib in /mingw64
-configure:15331: result: ok
-configure:15350: checking whether to enable https support
-configure:15370: result: yes
-configure:15386: checking for EVP_get_digestbyname in -lcrypto
-configure:15409: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lcrypto  -lz  >&5
-configure:15409: $? = 0
-configure:15419: result: yes
-configure:15430: checking for SSL_CTX_new in -lssl
-configure:15453: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lssl  -lz  -lcrypto >&5
-configure:15453: $? = 0
-configure:15463: result: yes
-configure:15490: checking for getaddrinfo in -lc
-configure:15513: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15171: result: no
+configure:15183: checking if zlib is wanted
+configure:15190: result: yes
+configure:15226: checking for inflateEnd in -lz
+configure:15249: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz   >&5
+configure:15249: $? = 0
+configure:15259: result: yes
+configure:15268: checking for zlib.h
+configure:15268: gcc -c -g -O2  -I/mingw64/include conftest.c >&5
+configure:15268: $? = 0
+configure:15268: result: yes
+configure:15287: checking for inflateEnd in -lz
+configure:15320: result: yes
+configure:15330: checking zlib in /mingw64
+configure:15332: result: ok
+configure:15351: checking whether to enable https support
+configure:15371: result: yes
+configure:15387: checking for EVP_get_digestbyname in -lcrypto
+configure:15410: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lcrypto  -lz  >&5
+configure:15410: $? = 0
+configure:15420: result: yes
+configure:15431: checking for SSL_CTX_new in -lssl
+configure:15454: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lssl  -lz  -lcrypto >&5
+configure:15454: $? = 0
+configure:15464: result: yes
+configure:15491: checking for getaddrinfo in -lc
+configure:15514: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15513: $? = 1
+configure:15514: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1216,13 +1216,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15523: result: no
-configure:15532: WARNING: *** IPv6 not found IPv6 compatibility disabled
-configure:15539: checking for fopen64 in -lc
-configure:15562: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15524: result: no
+configure:15533: WARNING: *** IPv6 not found IPv6 compatibility disabled
+configure:15540: checking for fopen64 in -lc
+configure:15563: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15562: $? = 1
+configure:15563: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1281,19 +1281,19 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15572: result: no
-configure:15581: result: not found
-configure:15588: checking for pthread_create in -lpthread
-configure:15611: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lpthread  -lz  >&5
-configure:15611: $? = 0
-configure:15621: result: yes
-configure:15742: result: using -lws2_32 for Windows
-configure:15797: checking for iconv in -liconv
-configure:15820: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -liconv  -lz  >&5
-C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\ccGJAN5f.o: in function `main':
+configure:15573: result: no
+configure:15582: result: not found
+configure:15589: checking for pthread_create in -lpthread
+configure:15612: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lpthread  -lz  >&5
+configure:15612: $? = 0
+configure:15622: result: yes
+configure:15743: result: using -lws2_32 for Windows
+configure:15802: checking for iconv in -liconv
+configure:15825: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -liconv  -lz  >&5
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\cc6ac6uM.o: in function `main':
 C:/git/research/httrack/conftest.c:55:(.text.startup+0xa): undefined reference to `iconv'
 collect2.exe: error: ld returned 1 exit status
-configure:15820: $? = 1
+configure:15825: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1353,13 +1353,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15830: result: no
-configure:15839: result: not necessary
-configure:15846: checking for dlopen in -ldl
-configure:15869: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -ldl  -lz  >&5
+configure:15835: result: no
+configure:15844: result: not necessary
+configure:15851: checking for dlopen in -ldl
+configure:15874: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -ldl  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -ldl: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15869: $? = 1
+configure:15874: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1419,13 +1419,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15879: result: no
-configure:15888: result: not found
-configure:15895: checking for dlopen in -lc
-configure:15918: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15884: result: no
+configure:15893: result: not found
+configure:15900: checking for dlopen in -lc
+configure:15923: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15918: $? = 1
+configure:15923: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1485,13 +1485,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15928: result: no
-configure:15937: WARNING: *** not found * this is bad
-configure:15945: checking for setuid in -lc
-configure:15968: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:15933: result: no
+configure:15942: WARNING: *** not found * this is bad
+configure:15950: checking for setuid in -lc
+configure:15973: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:15968: $? = 1
+configure:15973: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1551,48 +1551,48 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15978: result: no
-configure:15987: result: not found
-configure:15993: checking for snprintf
-configure:15993: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:15983: result: no
+configure:15992: result: not found
+configure:15998: checking for snprintf
+configure:15998: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
 conftest.c:63:6: warning: conflicting types for built-in function 'snprintf'; expected 'int(char *, long long unsigned int,  const char *, ...)' [-Wbuiltin-declaration-mismatch]
    63 | char snprintf ();
       |      ^~~~~~~~
 conftest.c:55:1: note: 'snprintf' is declared in header '<stdio.h>'
    54 | #include <limits.h>
    55 | #undef snprintf
-configure:15993: $? = 0
-configure:15993: result: yes
-configure:15999: checking for vsnprintf
-configure:15999: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:15998: $? = 0
+configure:15998: result: yes
+configure:16004: checking for vsnprintf
+configure:16004: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
 conftest.c:64:6: warning: conflicting types for built-in function 'vsnprintf'; expected 'int(char *, long long unsigned int,  const char *, char *)' [-Wbuiltin-declaration-mismatch]
    64 | char vsnprintf ();
       |      ^~~~~~~~~
 conftest.c:56:1: note: 'vsnprintf' is declared in header '<stdio.h>'
    55 | #include <limits.h>
    56 | #undef vsnprintf
-configure:15999: $? = 0
-configure:15999: result: yes
-configure:16006: checking for working snprintf
-configure:16036: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
-configure:16036: $? = 0
-configure:16036: ./conftest.exe
-configure:16036: $? = 0
-configure:16048: result: yes
-configure:16050: checking for working vsnprintf
-configure:16091: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
-configure:16091: $? = 0
-configure:16091: ./conftest.exe
-configure:16091: $? = 0
-configure:16103: result: yes
-configure:16120: checking for strnlen in -lc
-configure:16143: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
+configure:16004: $? = 0
+configure:16004: result: yes
+configure:16011: checking for working snprintf
+configure:16041: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:16041: $? = 0
+configure:16041: ./conftest.exe
+configure:16041: $? = 0
+configure:16053: result: yes
+configure:16055: checking for working vsnprintf
+configure:16096: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lz  >&5
+configure:16096: $? = 0
+configure:16096: ./conftest.exe
+configure:16096: $? = 0
+configure:16108: result: yes
+configure:16125: checking for strnlen in -lc
+configure:16148: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -lc  -lz  >&5
 conftest.c:53:6: warning: conflicting types for built-in function 'strnlen'; expected 'long long unsigned int(const char *, long long unsigned int)' [-Wbuiltin-declaration-mismatch]
    53 | char strnlen ();
       |      ^~~~~~~
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
-configure:16143: $? = 1
+configure:16148: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "httrack"
@@ -1654,13 +1654,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16153: result: no
-configure:16162: result: not found
-configure:16168: checking whether to enable online unit tests
-configure:16188: result: no
-configure:16308: checking that generated files are newer than configure
-configure:16314: result: done
-configure:16345: creating ./config.status
+configure:16158: result: no
+configure:16167: result: not found
+configure:16173: checking whether to enable online unit tests
+configure:16193: result: no
+configure:16313: checking that generated files are newer than configure
+configure:16319: result: done
+configure:16350: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -1677,25 +1677,25 @@ generated by GNU Autoconf 2.71.  Invocation command line was
 
 on DESKTOP-FEH38TF
 
-config.status:1156: creating Makefile
-config.status:1156: creating src/Makefile
-config.status:1156: creating man/Makefile
-config.status:1156: creating m4/Makefile
-config.status:1156: creating templates/Makefile
-config.status:1156: creating lang/Makefile
-config.status:1156: creating html/Makefile
-config.status:1156: creating libtest/Makefile
-config.status:1156: creating tests/Makefile
-config.status:1156: creating config.h
-config.status:1337: config.h is unchanged
-config.status:1385: executing depfiles commands
-config.status:1460: cd src       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1157: creating Makefile
+config.status:1157: creating src/Makefile
+config.status:1157: creating man/Makefile
+config.status:1157: creating m4/Makefile
+config.status:1157: creating templates/Makefile
+config.status:1157: creating lang/Makefile
+config.status:1157: creating html/Makefile
+config.status:1157: creating libtest/Makefile
+config.status:1157: creating tests/Makefile
+config.status:1157: creating config.h
+config.status:1338: config.h is unchanged
+config.status:1386: executing depfiles commands
+config.status:1461: cd src       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1467: $? = 0
-config.status:1460: cd libtest       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1468: $? = 0
+config.status:1461: cd libtest       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1467: $? = 0
-config.status:1385: executing libtool commands
+config.status:1468: $? = 0
+config.status:1386: executing libtool commands
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -1891,6 +1891,7 @@ LD='C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe'
 LDFLAGS=' -L/mingw64/lib'
 LDFLAGS_PIE='-pie'
 LFS_FLAG=''
+LIBHTTRACK_STATIC_CFLAGS='-DLIBHTTRACK_STATIC'
 LIBOBJS=''
 LIBS='-lz '
 LIBTOOL='$(SHELL) $(top_builddir)/libtool'

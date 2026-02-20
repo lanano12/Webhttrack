@@ -693,6 +693,7 @@ LIBOBJS
 DL_LIBS
 ICONV_LIBS
 SOCKET_LIBS
+LIBHTTRACK_STATIC_CFLAGS
 THREADS_CFLAGS
 THREADS_LIBS
 LFS_FLAG
@@ -15791,7 +15792,11 @@ fi
     ;;
 esac
 
-
+if test "x$enable_shared" = xno; then
+  LIBHTTRACK_STATIC_CFLAGS="-DLIBHTTRACK_STATIC"
+else
+  LIBHTTRACK_STATIC_CFLAGS=""
+fi
 
 ### Check for iconv
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for iconv in -liconv" >&5

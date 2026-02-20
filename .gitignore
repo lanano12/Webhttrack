@@ -1,2 +1,54 @@
-.o
-.exe
+# Object files and libraries
+*.o
+*.obj
+*.lo
+*.la
+*.lai
+*.a
+*.lib
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+a.out
+
+# Libtool
+.deps/
+.libs/
+
+# Autotools / configure
+/autom4te.cache/
+/config.log
+/config.status
+/config.h
+/config.guess
+/config.sub
+/configure.lineno
+/install-sh
+/missing
+/stamp-h1
+*.m4~
+
+# Makefile (generated from Makefile.in by configure)
+Makefile
+
+# Editor and OS
+*~
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# Debug and core
+core
+core.*
+*.stackdump
+
+# Build directories (out-of-tree)
+/build/
+/obj/
