@@ -1290,7 +1290,7 @@ configure:15622: result: yes
 configure:15743: result: using -lws2_32 for Windows
 configure:15802: checking for iconv in -liconv
 configure:15825: gcc -o conftest.exe -g -O2  -I/mingw64/include  -L/mingw64/lib conftest.c -liconv  -lz  >&5
-C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\cc6ac6uM.o: in function `main':
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\ccWroesz.o: in function `main':
 C:/git/research/httrack/conftest.c:55:(.text.startup+0xa): undefined reference to `iconv'
 collect2.exe: error: ld returned 1 exit status
 configure:15825: $? = 1
