@@ -9,4 +9,5 @@ contextBridge.exposeInMainWorld('electronAPI', {
   onBrowserUrlChanged: (callback) => {
     ipcRenderer.on('browser-url-changed', (_, url) => callback(url));
   },
+  captureScreenshot: () => ipcRenderer.invoke('browser-capture-screenshot'),
 });

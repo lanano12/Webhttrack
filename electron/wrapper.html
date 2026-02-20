@@ -79,6 +79,7 @@
         <input type="text" id="url-in" placeholder="https://example.com" spellcheck="false" />
         <button type="button" id="go-btn">Go</button>
         <button type="button" id="open-external-btn" class="secondary" title="Open in your default browser">Open in browser</button>
+        <button type="button" id="screenshot-btn" class="secondary" title="Save a PNG screenshot of the browser panel">Screenshot</button>
       </div>
       <div class="browser-placeholder" id="browser-placeholder" title="Browser view (native)"></div>
     </div>
@@ -161,6 +162,20 @@
           window.electronAPI.openInBrowser(url);
           debug('opened in default browser: ' + url, 'Browser');
         }
+      });
+
+      var screenshotBtn = document.getElementById('screenshot-btn');
+      screenshotBtn.addEventListener('click', function () {
+        if (!window.electronAPI || !window.electronAPI.captureScreenshot) return;
+        window.electronAPI.captureScreenshot().then(function (result) {
+          if (result.canceled && !result.error) {
+            debug('Screenshot cancelled', 'Browser');
+          } else if (result.error) {
+            debug('Screenshot failed: ' + result.error, 'Browser');
+          } else {
+            debug('Screenshot saved: ' + result.path, 'Browser');
+          }
+        });
       });
     })();
   </script>
